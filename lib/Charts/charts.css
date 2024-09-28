@@ -12,3 +12,11 @@
         transform: scale(1.2);
     }
 }
+
+.void-linepoint:hover {
+    fill: #f59e0b;
+  }
+  
+  .void-line:hover {
+    stroke: red;
+  }
