@@ -1,0 +1,14 @@
+.void-piechart {
+    overflow: visible;
+    transform: rotate(-0.25turn);
+}
+
+.void-pieslice {
+    transition: all 0.3s ease-out;
+}
+
+@media not (prefers-reduced-motion) {
+    .void-pieslice:hover {
+        transform: scale(1.2);
+    }
+}
