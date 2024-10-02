@@ -1,5 +1,6 @@
 {
   "name": "@sshah17/void-ui",
+  "license": "MIT",
   "version": "0.0.3",
   "type": "module",
   "files": [
