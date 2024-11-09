@@ -17,3 +17,4 @@ import "@sshah17/void-ui/dist/style.css"
 ## Components currently included In the library:
 1. Pie Chart
 2. Line Chart
+3. Button
