@@ -1,4 +1,4 @@
-import { useRef, type ReactNode, useEffect, useState } from "react";
+import { useRef, type ReactNode, useEffect, useState, MouseEvent } from "react";
 import "./button.css";
 
 interface VoidButtonProps {
@@ -7,7 +7,7 @@ interface VoidButtonProps {
   borderColor?: string;
   activeBackgroundColor?: string;
   activerBorderColor?: string;
-  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
+  onClick?: (event: MouseEvent<HTMLDivElement>) => void;
   width?: string;
   height?: string;
 }
@@ -27,6 +27,10 @@ export function Button(props: VoidButtonProps) {
   }
   function hoverOut() {
     setIsHovering(false);
+  }
+
+  function clickButton() {
+    voidButtonRef.current?.click();
   }
 
   useEffect(() => {
@@ -65,6 +69,10 @@ export function Button(props: VoidButtonProps) {
         }}
         onClick={props.onClick ? props.onClick : () => {}}
         ref={voidButtonRef}
+        tabIndex={0}
+        onFocus={hoverIn}
+        onBlur={hoverOut}
+        onKeyDown={(e) => props.onClick && e.key === "Enter" && clickButton()}
       >
         {props.children}
       </div>

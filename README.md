@@ -18,3 +18,4 @@ import "@sshah17/void-ui/dist/style.css"
 1. Pie Chart
 2. Line Chart
 3. Button
+4. Table

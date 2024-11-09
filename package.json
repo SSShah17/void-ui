@@ -1,7 +1,7 @@
 {
   "name": "@sshah17/void-ui",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist"
@@ -25,6 +25,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vite-tsconfig-paths": "^5.0.1"

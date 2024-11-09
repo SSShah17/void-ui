@@ -32,7 +32,7 @@ export const Default: Story = {
     borderColor: "#80669d",
     activeBackgroundColor: "#80669d",
     activerBorderColor: "#5dbea3",
-    onClick: () => alert("Hello There!"),
+    // onClick: () => alert("Hello There!"),
     // width: '200px',
     // height: '200px'
   },
